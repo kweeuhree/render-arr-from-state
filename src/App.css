@@ -4,3 +4,11 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.score {
+  color: black;
+}
+
+.low-score {
+  color: red;
+}
