@@ -4,8 +4,10 @@ import Score from './Score';
 const Learner = ({ learner }) => {
   return (
     <div className='learner-container'>
-        <div className='learner-name'>{learner.name}</div>
-        <div className='learner-bio'>{learner.bio}</div>
+       <div className='name-bio-container'>
+          <div className='learner-name'>{learner.name}</div>
+          <div className='learner-bio'>{learner.bio}</div>
+       </div>
         
         <div className='learner-scores'>
             {learner.scores.map((score, index) => (
