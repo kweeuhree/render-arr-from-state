@@ -1,4 +1,5 @@
 import React from 'react'
+import Score from './Score';
 
 const Learner = ({ learner }) => {
   return (
@@ -8,7 +9,7 @@ const Learner = ({ learner }) => {
         
         <div className='learner-scores'>
             {learner.scores.map((score, index) => (
-                <div className={`score ${score.score < 70 ? 'low-score' : ''}`} key={index}>{score.score}</div>
+                <Score key={index} details={score} />
         ))}
         </div>
 
